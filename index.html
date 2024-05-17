@@ -9,7 +9,7 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-color: #000000;
             color: #e0e0e0;
         }
         header {
@@ -61,6 +61,35 @@
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
             border-radius: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .card img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .feature-callouts {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .feature-callout {
+            background: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            width: 30%;
+            position: relative;
+        }
+        .feature-callout img {
+            width: 100%;
+            border-radius: 15px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         footer {
             background-color: #007acc;
@@ -110,33 +139,39 @@
 <div class="container content" id="about">
     <h2>About TerraQuest</h2>
     <div class="card">
-        <p>TerraQuest is a mobile, story-driven game where players embark on a journey guided by a group of benevolent aliens. Through engaging visual novel-style dialogues and branching narratives, players navigate simulations of real-life scenarios like pollution and global warming, making impactful decisions that affect the outcome. The game also features a futuristic academy where AI companions provide scientifically backed insights to help players make informed choices.</p>
+        <img src="https://via.placeholder.com/150" alt="Micaela Romanini">
+        <div>
+            <h3>Micaela Romanini</h3>
+            <p>Micaela is a trailblazer in the realm of diversity and inclusion. She has dedicated her life to advocating for equity within the tech and gaming sectors. As the founder of Women in Games Italia, she has led initiatives to address gender disparities. With a background in Business Development, Marketing, and Communications, Micaela has worked with organizations like Microsoft, the EU Commission, and EIT Culture and Creativity. At VIGAMUS, she served as Vice Director, developing business strategies and overseeing educational and marketing activities.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Guglielmo De Gregori">
+        <div>
+            <h3>Guglielmo De Gregori</h3>
+            <p>Guglielmo is a master game developer with a visionary approach and technical expertise. At Magic Media, he has worked on projects spanning blockchain, Unreal Engine 5 online platforms, console, and mobile gaming. He is a key figure on the Advisory Board of VIGAMUS Group and has designed interactive spaces for the VIGAMUS - Video Game Museum of Rome. Guglielmo led the creation of the museum’s game development branch, working on projects like #CodeDNA and Behind the Light.</p>
+        </div>
     </div>
 </div>
 
 <div class="container content" id="features">
     <h2>Features</h2>
-    <div class="card">
-        <ul>
-            <li><strong>Story-Driven Experience:</strong> Visual novel-style dialogues with branching narratives.</li>
-            <li><strong>Simulation Scenarios:</strong> Real-life issues like pollution and global warming.</li>
-            <li><strong>AI NPC School:</strong> AI companions provide fact-checked educational resources.</li>
-            <li><strong>Progression System:</strong> Unlock new scenarios and challenges by resolving simulations.</li>
-            <li><strong>Avatar Customization:</strong> Enhance your in-game identity with various cosmetics.</li>
-            <li><strong>Charity Integration:</strong> Donate to environmental and educational causes to unlock rewards.</li>
-        </ul>
-    </div>
-</div>
-
-<div class="container content" id="team">
-    <h2>Our Team</h2>
-    <div class="card">
-        <h3>Micaela Romanini</h3>
-        <p>Micaela is a trailblazer in the realm of diversity and inclusion. She has dedicated her life to advocating for equity within the tech and gaming sectors. As the founder of Women in Games Italia, she has led initiatives to address gender disparities. With a background in Business Development, Marketing, and Communications, Micaela has worked with organizations like Microsoft, the EU Commission, and EIT Culture and Creativity. At VIGAMUS, she served as Vice Director, developing business strategies and overseeing educational and marketing activities.</p>
-    </div>
-    <div class="card">
-        <h3>Guglielmo De Gregori</h3>
-        <p>Guglielmo is a master game developer with a visionary approach and technical expertise. At Magic Media, he has worked on projects spanning blockchain, Unreal Engine 5 online platforms, console, and mobile gaming. He is a key figure on the Advisory Board of VIGAMUS Group and has designed interactive spaces for the VIGAMUS - Video Game Museum of Rome. Guglielmo led the creation of the museum’s game development branch, working on projects like #CodeDNA and Behind the Light.</p>
+    <div class="feature-callouts">
+        <div class="feature-callout">
+            <img src="image1.png" alt="Feature 1">
+            <h3>Story-Driven Experience</h3>
+            <p>Visual novel-style dialogues with branching narratives.</p>
+        </div>
+        <div class="feature-callout">
+            <img src="image2.png" alt="Feature 2">
+            <h3>Simulation Scenarios</h3>
+            <p>Real-life issues like pollution and global warming.</p>
+        </div>
+        <div class="feature-callout">
+            <img src="image3.png" alt="Feature 3">
+            <h3>AI NPC School</h3>
+            <p>AI companions provide fact-checked educational resources.</p>
+        </div>
     </div>
 </div>
 

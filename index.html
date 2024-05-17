@@ -72,6 +72,7 @@
         }
         .feature-callouts {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 40px;
         }
@@ -81,16 +82,19 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
             border-radius: 15px;
             width: 30%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
             position: relative;
         }
         .feature-callout img {
             width: 300px;  /* Adjust the width */
             height: 325px; /* Adjust the height */
             border-radius: 15px;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-right: 20px;
+        }
+        .feature-callout div {
+            flex: 1;
         }
         footer {
             background-color: #007acc;
@@ -141,19 +145,25 @@
     <h2>Features</h2>
     <div class="feature-callouts">
         <div class="feature-callout">
-            <img src="image1.png" alt="Feature 1">
-            <h3>Story-Driven Experience</h3>
-            <p>Visual novel-style dialogues with branching narratives.</p>
+            <img src="file-qllGzcWFGaor0H2UE2C57Zz0" alt="Feature 1">
+            <div>
+                <h3>Story-Driven Experience</h3>
+                <p>Visual novel-style dialogues with branching narratives.</p>
+            </div>
         </div>
         <div class="feature-callout">
-            <img src="image2.png" alt="Feature 2">
-            <h3>Simulation Scenarios</h3>
-            <p>Real-life issues like pollution and global warming.</p>
+            <img src="file-qllGzcWFGaor0H2UE2C57Zz0" alt="Feature 2">
+            <div>
+                <h3>Simulation Scenarios</h3>
+                <p>Real-life issues like pollution and global warming.</p>
+            </div>
         </div>
         <div class="feature-callout">
-            <img src="image3.png" alt="Feature 3">
-            <h3>AI NPC School</h3>
-            <p>AI companions provide fact-checked educational resources.</p>
+            <img src="file-qllGzcWFGaor0H2UE2C57Zz0" alt="Feature 3">
+            <div>
+                <h3>AI NPC School</h3>
+                <p>AI companions provide fact-checked educational resources.</p>
+            </div>
         </div>
     </div>
 </div>

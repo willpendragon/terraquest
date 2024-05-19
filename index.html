@@ -63,12 +63,26 @@
             border-radius: 15px;
             display: flex;
             align-items: center;
+            justify-content: space-between; /* Added to space between image and text */
         }
         .card img {
             border-radius: 50%;
             margin-right: 20px;
             width: 150px;
             height: 150px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background: #00ccff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #0099cc;
         }
         .feature-callouts {
             display: flex;
@@ -108,19 +122,6 @@
             bottom: 0;
             width: 100%;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 20px;
-            color: white;
-            background: #00ccff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .button:hover {
-            background: #0099cc;
-        }
     </style>
 </head>
 <body>
@@ -134,7 +135,6 @@
     <a href="#about">About the Game</a>
     <a href="#premise">Premise</a>
     <a href="#features">Features</a>
-    <a href="#team">Our Team</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -182,24 +182,26 @@
 <div class="container content" id="about">
     <h2>About TerraQuest</h2>
     <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Micaela Romanini">
+        <img src="micaela_romanini_picture.png" alt="Micaela Romanini">
         <div>
             <h3>Micaela Romanini</h3>
             <p>Micaela is a trailblazer in the realm of diversity and inclusion. She has dedicated her life to advocating for equity within the tech and gaming sectors. As the founder of Women in Games Italia, she has led initiatives to address gender disparities. With a background in Business Development, Marketing, and Communications, Micaela has worked with organizations like Microsoft, the EU Commission, and EIT Culture and Creativity. At VIGAMUS, she served as Vice Director, developing business strategies and overseeing educational and marketing activities.</p>
+            <a href="#" class="button">Download CV</a>
         </div>
     </div>
     <div class="card">
-        <img src="https://via.placeholder.com/150" alt="Guglielmo De Gregori">
+        <img src="guglielmo_de_gregori_picture.png" alt="Guglielmo De Gregori">
         <div>
             <h3>Guglielmo De Gregori</h3>
             <p>Guglielmo is a master game developer with a visionary approach and technical expertise. At Magic Media, he has worked on projects spanning blockchain, Unreal Engine 5 online platforms, console, and mobile gaming. He is a key figure on the Advisory Board of VIGAMUS Group and has designed interactive spaces for the VIGAMUS - Video Game Museum of Rome. Guglielmo led the creation of the museum’s game development branch, working on projects like #CodeDNA and Behind the Light.</p>
+            <a href="#" class="button">Download CV</a>
         </div>
     </div>
 </div>
 
 <footer>
     <p>TerraQuest &copy; 2024. All Rights Reserved.</p>
-    <p><a href="mailto:info@terraquestgame.com">Contact Us</a></p>
+    <p><a href="mailto:roma.micaela@gmail.com">Contact Us</a></p>
 </footer>
 
 </body>
